@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#1E88E5</color> <!-- Blue color for buttons -->
+    <color name="gray">#F5F5F5</color> <!-- Light gray background for input fields -->
+    <color name="dark_gray">#333333</color> <!-- Dark gray for result text -->
+    <color name="light_gray">#BDBDBD</color> <!-- Light gray for borders -->
+</resources>
