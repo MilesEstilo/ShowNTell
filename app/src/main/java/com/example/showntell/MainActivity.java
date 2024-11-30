@@ -85,8 +85,10 @@ public class MainActivity extends AppCompatActivity {
 
         double amount = Double.parseDouble(amountStr);
 
-        // Make API call to fetch exchange rate
-        currencyApi.getExchangeRate(from).enqueue(new Callback<ExchangeRateResponse>() {
+        String apiKey = "6edb15d6aba29deb05583cf7";  // Your API key
+
+        // Make API call to fetch exchange rate with the API key
+        currencyApi.getExchangeRate(from, apiKey).enqueue(new Callback<ExchangeRateResponse>() {
             @Override
             public void onResponse(Call<ExchangeRateResponse> call, Response<ExchangeRateResponse> response) {
                 if (response.isSuccessful() && response.body() != null) {
@@ -105,3 +107,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+
